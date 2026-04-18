@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,260 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-custom-dark { background-color: #1a202c; }
+    </style>
 </head>
-<body>
-     <section class="flex max-w-325 m-auto justify-between p-6">
-        <div class="flex items-center gap-5">
-            <img src="./src/Oval 3.png" alt="">
-            <div class="lg:flex hidden items-center gap-5 "><p>About us</p>
-            <p>How it works</p>
-            <p>Pricing</p>
-            <p>FAQs</p></div>
+<body class="bg-custom-dark text-white min-h-screen overflow-x-hidden relative">
+
+    <div class="absolute top-[-10%] left-[-10%] w-125 h-125 bg-blue-900 opacity-20 blur-[120px] rounded-full -z-10"></div>
+    <div class="absolute bottom-[10%] right-[0%] w-150 h-150 bg-sky-600 opacity-20 blur-[150px] rounded-full -z-10"></div>
+
+    <header class="flex items-center justify-between px-8 lg:px-24 py-8">
+        <div class="text-2xl font-extrabold tracking-tight">BrandName</div>
+        
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+            <a href="#" class="hover:text-white transition">Home</a>
+            <a href="#" class="hover:text-white transition">Product</a>
+            <a href="#" class="hover:text-white transition">Pricing</a>
+            <a href="#" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div class="flex items-center space-x-6">
+            <a href="#" class="text-sm font-semibold hover:text-sky-400 transition">Login</a>
+            <a href="#" class="bg-[#2eb1f3] hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition transform hover:scale-105">
+                Become a member 
+                <span>&rarr;</span>
+            </a>
         </div>
-        <div class="lg:flex hidden items-center gap-6"><p>Login</p>
-        <button class="w-30 bg-black p-3 text-[white]">Sign Up</button></div>
-         <div class="lg:hidden text-[25px]">☰</div>
-     </section>
-     <section class="flex max-w-325 m-auto p-5 mt-8 justify-between">
-       <div> <div><h1 class="text-[45px] w-117.5">Always Track &  <br>
-Analyze Your Business 
-Statistics To Succeed.</h1>
-<p class="w-125">A better way to manage your sales, team, clients & marketing <br>
-— on a single platform. Powerful, affordable & easy.</p></div>
+    </header>
 
-  <div class="flex mt-7.5">
-    <input 
-      type="email" 
-      placeholder="Enter your email"
-      class="px-4 py-2 w-64 border border-gray-400 outline-none"
-    >
-    <button 
-      onclick="submitEmail()"
-      class="bg-black text-white px-6 py-2"
-    >
-      Get started
-    </button>
-  </div>
-  <div class="flex gap-5 mt-7.5"> <img src="./m_visa.png" alt=""><img src="./src/m_mastercard.png" alt=""><img src="./m_paypall.png" alt=""></div></div>
-  <div><img src="./Illustration_1.png" alt=""></div>
-     </section>
-     
-  <section class="max-w-325 mx-auto py-20 px-6 grid md:grid-cols-2 gap-10 items-center">
-
-    <div class="flex justify-center">
-      <img src="./Illustration_2.png" alt="illustration" class="max-w-sm">
-    </div>
-
-
-    <div>
-      <span class="border px-3 py-1 text-sm">ABOUT US</span>
-
-      <h1 class="text-4xl md:text-5xl font-semibold mt-6 leading-tight">
-        Faster, friendlier feedback loops make life easier.
-      </h1>
-
-      <p class="text-gray-600 mt-4">
-        Add a Viewer to your team so they can see everything you share, or invite people to individual documents.
-        It's up to you. Stakeholders can check out designs in their web browser, test prototypes and leave feedback for free.
-      </p>
-
-      <ul class="mt-6 space-y-3 text-gray-700">
-        <li class="flex items-start gap-3">
-          <span class="w-2 h-2 bg-black mt-2"></span>
-          Shared Cloud Libraries, for a single source of truth
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-2 h-2 bg-black mt-2"></span>
-          Prototype previews for user testing and research
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-2 h-2 bg-black mt-2"></span>
-          Easy organization with projects
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-2 h-2 bg-black mt-2"></span>
-          Free developer handoff, right inside the browser
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="w-2 h-2 bg-black mt-2"></span>
-          Two–factor authentication and SSO
-        </li>
-      </ul>
-    </div>
-
-  </section>
-    <section class="max-w-325 mx-auto py-20 px-6 grid md:grid-cols-2 gap-12 items-center justify-between">
-
- 
-    <div>
-
-      <span class="border px-3 py-1 text-sm">HOW IT WORKS</span>
-
-      <h1 class="text-4xl md:text-5xl font-semibold mt-6 leading-tight">
-        Building the best space for collaboration.
-      </h1>
-
-      <div class="mt-10 space-y-8">
-
-   
-        <div class="flex gap-4">
-          <div class="  flex items-center justify-center"> <img src="./icon_1.png" alt=""></div>
-          <div>
-            <h3 class="text-lg font-semibold">Shared Cloud Libraries</h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Navigate to the Your work panel in the left sidebar. Select the library you want to share.
-              Select the Share icon in the upper right to share the library.
+    <main class="flex flex-col lg:flex-row items-center justify-between px-8 lg:px-24 py-16 lg:py-32 gap-12">
+        
+        <div class="w-full lg:w-1/2 space-y-8">
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight">
+                Financial <br> Assistance With <br> True Purpose
+            </h1>
+            <p class="text-gray-400 text-lg lg:text-xl max-w-md leading-relaxed">
+                We know how large objects will act, but things on a small scale.
             </p>
-          </div>
+            
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#" class="bg-[#2eb1f3] hover:bg-sky-500 px-10 py-4 rounded-full font-bold transition shadow-lg shadow-sky-500/20">
+                    Get Quote Now
+                </a>
+                <a href="#" class="border border-gray-500 hover:border-white px-10 py-4 rounded-full font-bold transition">
+                    Learn More
+                </a>
+            </div>
         </div>
 
-        <div class="flex gap-4">
-          <div class="flex items-center justify-center"> <img src="./icon_2.png" alt=""></div>
-          <div>
-            <h3 class="text-lg font-semibold">Free developer handoff, right inside</h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Cloud Inspector makes it easy for developers to get the information they need
-              to turn pixels into code — all in the browser and, most importantly, for free.
+        <div class="w-full lg:w-1/2 flex justify-center lg:justify-end relative">
+            <img src="./col-md-6.png" alt="Phone Mockup" class="w-[320px] lg:w-112.5 drop-shadow-2xl rotate-[-5deg]">
+            
+            <div class="absolute inset-0 bg-sky-500/20 rounded-full blur-3xl -z-10 scale-75"></div>
+        </div>
+
+    </main>
+ <section class="bg-[#1a202c] text-white py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-medium mb-6">
+                Better Strategy With <br class="hidden md:block"> Quality Business
+            </h2>
+            <p class="text-gray-400 max-w-xl mx-auto text-base leading-relaxed">
+                Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
             </p>
-          </div>
         </div>
 
-      
-        <div class="flex gap-4">
-          <div class="  flex items-center justify-center"><img src="./icon_3.png" alt=""></div>
-          <div>
-            <h3 class="text-lg font-semibold">Real-time collaborative editing</h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Room Service helps you build real-time collaborative features.
-              Add real-time data sync! Let users edit the same data at the same time.
-            </p>
-          </div>
-        </div>
-
-      
-        <div class="flex gap-4">
-          <div class="  flex items-center justify-center"><img src="./icon_4.png" alt=""></div>
-          <div>
-            <h3 class="text-lg font-semibold">Integrations with the Cloud API</h3>
-            <p class="text-gray-600 text-sm mt-1">
-              Unlocking that value requires an iPaaS that delivers the transformative power of APIs and integration.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="flex justify-center">
-      <img src="./Illustration_3.png" alt="" class="max-w-sm">
-    </div>
-
-  </section>
-  <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
-            <div class="w-full md:w-1/2">
-                <div class=" bg-white rounded-full flex items-center justify-center  relative">
-                     <img src="./Illustration_4.png" alt="ddd">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5  ">
+                <div class="text-[#2eb1f3] ">
+                     <img src="./icn resize .icn-xl.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] transition-colors">Investment Trading</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 text-right">
-                <span class="border border-black px-3 py-1 text-xs font-bold uppercase tracking-widest">Pricing</span>
-                <h1 class="text-[45px] font-light mt-6 leading-tight">Select a membership level <br> the right price for you.</h1>
-                <p class="text-sm mt-4 text-gray-600">Prices listed in USD. Taxes may apply.<br>By using program you agree to our terms and policies.</p>
-            </div>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
-            <div class="bg-[#ffffff] p-10 flex flex-col border border-gray-300">
-                <div class="flex items-baseline gap-1 mb-4">
-                    <span class="text-2xl font-bold">$</span>
-                    <span class="text-7xl font-bold">49</span>
-                    <span class="text-sm font-bold ml-2">per month</span>
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5">
+                <div class="text-[#2eb1f3] ">
+                    <img src="./icn resize .icn-xl.png" alt="">
+                      
                 </div>
-                <p class="mb-10 text-lg">A pay-once license, just for you</p>
-                <ul class="space-y-4 mb-auto">
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>The Mac app — yours to keep</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>Beautiful White_level</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>One year of saving to Cloud</span>
-                    </li>
-                </ul>
-                <button class="w-full bg-[#111111] text-white py-4 mt-12 font-bold hover:bg-black transition-colors">Join</button>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] transition-colors">Support On Raising Funds</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
+                </div>
             </div>
 
-            <div class="bg-[#111111] text-white p-10 flex flex-col">
-                <div class="flex items-baseline gap-1 mb-4">
-                    <span class="text-2xl font-bold">$</span>
-                    <span class="text-7xl font-bold">99</span>
-                    <span class="text-sm font-bold ml-2">per month</span>
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5">
+                <div class="text-[#2eb1f3] ">
+                   <img src="./icn resize .icn-xl.png" alt="">
+                      
                 </div>
-                <p class="mb-10 text-lg text-gray-300">Pro account, just for you</p>
-                <ul class="space-y-4 mb-auto">
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-white mt-1.5 shrink-0"></span>
-                        <span>The Mac app — yours to keep</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-white mt-1.5 shrink-0"></span>
-                        <span>One year of Mac app updates</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-white mt-1.5 shrink-0"></span>
-                        <span>One year of saving to Cloud</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-white mt-1.5 shrink-0"></span>
-                        <span>A personal Cloud workspace</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-white mt-1.5 shrink-0"></span>
-                        <span>All tools, just for you</span>
-                    </li>
-                </ul>
-                <button class="w-full bg-white text-black py-4 mt-12 font-bold hover:bg-gray-200 transition-colors">Join</button>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] transition-colors">Financial Analysis</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
+                </div>
             </div>
 
-            <div class="bg-white p-10 flex flex-col border border-gray-300">
-                <div class="flex items-baseline gap-1 mb-4">
-                    <span class="text-2xl font-bold">$</span>
-                    <span class="text-7xl font-bold">299</span>
-                    <span class="text-sm font-bold ml-2">per month</span>
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5">
+                <div class="text-[#2eb1f3] ">
+                    <img src="./icn resize .icn-xl.png" alt="">
                 </div>
-                <p class="mb-10 text-lg">A subscription for the whole team</p>
-                <ul class="space-y-4 mb-auto">
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>Access to the Mac app for all</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>A shared Cloud workspace</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>Free Cloud access for unlim</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>Easy team management</span>
-                    </li>
-                    <li class="flex items-start gap-3 text-sm">
-                        <span class="w-2 h-2 bg-black mt-1.5 shrink-0"></span>
-                        <span>No license key required</span>
-                    </li>
-                </ul>
-                <button class="w-full bg-[#111111] text-white py-4 mt-12 font-bold hover:bg-black transition-colors">Join</button>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] transition-colors">Taxation Planning</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
+                </div>
             </div>
+
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5 hover:bg-white/5  ">
+                <div class="text-[#2eb1f3] ">
+                    <img src="./icn resize .icn-xl.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] transition-colors">Save money and tim</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-700/50 p-10 flex items-start gap-5 ">
+                <div class="text-[#2eb1f3] shrink-0">
+                     <img src="./icn resize .icn-xl.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3 group-hover:text-[#2eb1f3] ">Outsourced Consulting Business</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">the quick fox jumps over the lazy dog</p>
+                </div>
+            </div>
+
         </div>
     </div>
+</section>
 </body>
 </html>
